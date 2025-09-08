@@ -1,0 +1,146 @@
+header{
+  background:#333;
+  color:white;
+  padding:10px 20px;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  
+}
+li{
+  display:inline;
+}
+.nav-links{
+  list-style:space-between;
+  display:center;
+}
+
+.nav-links a {
+  color:white;
+  text-decoration: none;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+nav a:hover{
+  color:blue;
+}
+section{
+  padding:50px 20px;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+/*hero section*/
+.hero{
+  background:linear-gradient(to right,purple,#00f2fe);
+  color:black;
+  text-align:center;
+  padding:20px 450px;
+}
+
+.hero h1{
+  color:purple;
+}
+.btn{
+background:yellow;
+color:blue;
+padding:7px 12px;
+text-decoration:None;
+margin-top:20px;
+display:inline-block;
+border-radius:5px;
+} 
+/*About section*/
+.about{
+  padding:20px 450px;
+    text-align:center;
+  
+}
+.about-content{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  
+   text-align:center;
+  
+}
+
+
+/*project section*/
+.project{
+  padding:20px 450px;
+  background:#f4f4f4;
+  text-align:center;
+}
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250pxm,1fr));
+  gap:20px;
+}
+.project-card{
+background:white;padding:20px;
+  border-radius:10px;
+  transition:transform 0.3s;
+  
+}
+.project-card:hover{
+  transform:scale(1.05);
+  
+}
+/*contact section*/
+.contact{
+  padding:20px 450px;
+  text-align:center;
+  
+}
+form{
+  max-width:400px;
+  margin:auto;
+}
+input,textarea{
+  width:100px;
+    padding:10px;
+  margin:10px;
+}
+button{
+  background:black;
+  color:white;
+  border:none;
+  padding:10px;
+  width:100px;
+  cursor:pointer;
+}
+button:hover{
+  background:#00c6ff;
+}
+/*footer*/
+footer{
+  background:blue;
+  color:white;
+  padding:10px;
+  text-align:center;
+}
+/*Responsive Navbar*/
+@media screen and (max-width:768px){
+  .nav-link{
+    display:none;
+    flex-direction:column;
+    position:absoulte;
+    right:0;
+    width:200px;
+  }
+  .nav-links.show{
+    display:flex;
+  }
+  .menu-toggle{
+    display:block;
+  }
+}
